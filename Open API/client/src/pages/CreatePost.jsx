@@ -36,8 +36,7 @@ const CreatePost = () => {
             headers: {
               "Content-Type": "application/json",
               "Access-Control-Allow-Origin": "*",
-              Authorization:
-                "Bearer process.env.API_KEY",
+              Authorization: "Bearer process.env.OPENAI_API_KEY=",
             },
             body: JSON.stringify({
               prompt: form.prompt,
