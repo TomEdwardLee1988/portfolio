@@ -1,0 +1,1 @@
+A project completed from a UDEMY course to further practice JS. Template with no js provided, and I had to provide the JS. This was then refactored to match instructors. DOM manipulation was the main learning point from this project.
