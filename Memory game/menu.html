@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Main Menu</title>
+  </head>
+  <body>
+    <div class="container">
+      <img class="terms" src="images/asterisk-solid.svg" />
+      <br />
+      <p class="conditions">Terms of Use</p>
+      <div class="termsOfUse hidden">
+        <div class="content">
+          <span class="terms-close">&times;</span>
+          <h1 class="terms-title">Terms of Use</h1>
+          <p class="termsConditions">
+            <strong>This product was created by The SLT Scrapbook.</strong>
+            <br />
+            <strong>
+              You have been granted a single-user license. This license is for
+              individual, personal use, by you.
+            </strong>
+            If you wish to share this resource with your colleagues, please
+            purchase additional licenses, or direct them to our store so they
+            can purchase their own copy of this resource.
+            <br />
+            You are not permitted to
+            <strong>sell, share, or claim this resource as your own.</strong>
+            <br />
+            You are
+            <strong>not permitted</strong>
+            to give a copy of this resource to other therapists (unless you have
+            an additional license).
+            <br />
+            You are
+            <strong>not permitted</strong>
+            to host this resource online or on a shared server in any form
+            (including but not limited to, classroom or school websites,
+            Facebook groups, shared Google drives, shared Dropbox drives, etc.).
+            <br />
+            <em>
+              <strong>
+                If you have any queries, please contact me at
+                thesltscrapbook@gmail.com.
+              </strong>
+            </em>
+            <br />
+            <br />
+            <strong>Credits:</strong>
+            <br />
+            Card Clipart - Bunny On a Cloud
+            <br />
+            Font - A Perfect Blend
+            <br />
+            Sentence Strip Visuals - Smarty Symbols
+          </p>
+        </div>
+      </div>
+      <img id="logo" src="images//The SLT Scrapbook- Black Text Logo.png" />
+      <h1 id="main">Main Menu</h1>
+      <a href="single.html">
+        <button class="menu-button" type="button">Single Word Verbs</button>
+      </a>
+      <a href="subject.html">
+        <button class="menu-button" type="button">
+          Two Words (Subject + Verb)
+        </button>
+      </a>
+      <a href="pronoun.html">
+        <button class="menu-button" type="button">Pronoun + Verb</button>
+      </a>
+      <a href="subjectVerbObject.html">
+        <button class="menu-button" type="button">
+          Subject + Verb + Object
+        </button>
+      </a>
+      <a href="pronounVerbObject.html">
+        <button class="menu-button" type="button">
+          Pronoun + Verb + Object
+        </button>
+      </a>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+  <script>
+    document.querySelector(".terms").addEventListener("click", function () {
+      terms.classList.remove("hidden");
+    });
+    // touch end
+    document.querySelector(".terms").addEventListener("touchend", function () {
+      terms.classList.remove("hidden");
+    });
+    // document.querySelector(".conditions").addEventListener("click", function () {
+    //   terms.classList.remove("hidden");
+    // });
+
+    document
+      .querySelector(".terms-close")
+      .addEventListener("click", function () {
+        terms.classList.add("hidden");
+      });
+    document
+      .querySelector(".terms-close")
+      .addEventListener("touchend", function () {
+        terms.classList.add("hidden");
+      });
+  </script>
+</html>

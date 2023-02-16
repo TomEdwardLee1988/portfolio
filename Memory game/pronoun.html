@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verb Memory Game</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body >
+    <a href="menu.html">
+      <img class="home" src="images/home.svg">
+    </a>
+    <h1 class="title">MATCH THE VERBS</h1><br>
+    <p class="subText">Pronoun + Verb</p>
+    <img id="logo" src="images/The SLT Scrapbook- Black Text Logo.png" />
+    <!-- <button id="reset"><img src="images/arrows-rotate-solid.svg" /></button> -->
+    <img id="settings" src="images/gear-solid.svg">
+    <div class="settings hidden">
+      <div class="content">
+        <span class="settings-close">&times;</span>
+        <p id="settingsTitle">Settings</p>
+        <p>You can change the length of time that the sentence strips and correct matches, and any incorrect matches remain on screen. <br> You will need to change this every time you start a new game (including resets), or the times will return to their default settings.</p>
+        <label for="settingsInput">Length of time for sentence strips and correct matches to remain on screen (in seconds)</label>
+<input type="number" id="settingsInput" value="5"><br>
+
+<label for="IncorrecctInput">Length of time for incorrect matches to remain on screen (in seconds)</label>
+<input type="number" id="incorrectInput" value="3"><br>
+
+<button id="fullUpdate">Update</button>
+      </div>
+    </div>
+    <img class="reset" src="images/arrows-rotate-solid.svg" />
+    
+
+    <img class="info" src="images/circle-info-solid.svg" />
+    <div class="modal hidden">
+      <div class="content">
+        <span class="close">&times;</span>
+        <h1 class="modal-title">How to play</h1>
+        <p>
+          The aim of the game is to find all the matching cards. Begin by
+          selecting a card, it will flip over to show a picture - click on
+          another card to try and find the matching pair!<br><br>
+          You can change how long the cards stay on the screen in the settings window, but <strong>please be aware </strong> settings will return to default whenever you start or refresh a game.
+        </p>
+      </div>
+    </div>
+    <div class="modal-winner hidden ">
+      <div class="content winner">
+        <span class="winner-close">&times;</span>
+        <h1 class="modal-title">YOU'RE A WINNER</h1>
+        <p class="winner-text">
+          Congratulations! You won! <br>
+          Press reset to play again, or press home to go back to the main menu.
+        </p>
+        <img class="winner-reset" src="images/arrows-rotate-solid.svg" />
+        <img class="winner-home" src ="images/home.svg"/>
+      </div>
+    </div>
+    <p class="score-text">You found <span class="score">0</span>/8 matches!</p>
+    
+      
+    </p>
+    <img class="verb-object hidden" src ="images/theboybook.png">
+    <img class = "pronoun-object hidden " src ="images/he-book.png">
+    <img class="pronoun hidden" src="images/he-eating.png">
+    <img class = "strip hidden " src = "images/strip-drinking.png">
+    <img class = "action hidden" src="images/eating.png">
+    <section class="memory-game">
+      <div class="memory-card" data-img="drinking" data-gender="she">
+        <img class="front-face" src="images/drink.png" alt="Child Drinking" />
+        <img class="back-face" src="images/question.png" alt="Qeustion Mark" />
+      </div>
+      <div class="memory-card" data-img="drinking" data-gender="she">
+        <img class="front-face" src="images/drink.png" alt="Child Drinking" />
+        <img class="back-face" src="images/question.png" alt="Question Mark" />
+      </div>
+
+      <div class="memory-card" data-img="eating" data-gender="he">
+        <img class="front-face" src="images/Eat.png" alt="Child Eating" />
+        <img class="back-face" src="images/question.png" alt="Question Mark" />
+      </div>
+      <div class="memory-card" data-img="eating" data-gender="he">
+        <img class="front-face" src="images/Eat.png" alt="Child Eating" />
+        <img class="back-face" src="images/question.png" alt="Question Mark" />
+      </div>
+
+      <div class="memory-card" data-img="jumping" data-gender="she">
+        <img class="front-face" src="images/jump.png" alt="Child Jumping" />
+        <img class="back-face" src="images/question.png" alt="Quesiton Mark" />
+      </div>
+      <div class="memory-card" data-img="jumping" data-gender="she">
+        <img class="front-face" src="images/jump.png" alt="Child Jumping" />
+        <img class="back-face" src="images/question.png" alt="Question Mark" />
+      </div>
+
+      <div class="memory-card" data-img="reading" data-gender="he">
+        <img class="front-face" src="images/read.png" alt="Child Reading" />
+        <img class="back-face" src="images/question.png" alt="Question Mark" />
+      </div>
+      <div class="memory-card" data-img="reading" data-gender="he">
+        <img class="front-face" src="images/read.png" alt="Child Reading" />
+        <img class="back-face" src="images/question.png" alt="Question Mark" />
+      </div>
+
+      <div class="memory-card" data-img="running" data-gender="he">
+        <img class="front-face" src="images/run.png" alt="Child Running" />
+        <img class="back-face" src="images/question.png" alt="Question Mark" />
+      </div>
+      <div class="memory-card" data-img="running" data-gender="he">
+        <img class="front-face" src="images/run.png" alt="Child Running" />
+        <img class="back-face" src="images/question.png" alt="Question Mark" />
+      </div>
+
+      <div class="memory-card" data-img="sitting" data-gender="she">
+        <img class="front-face" src="images/sit.png" alt="Child Sitting" />
+        <img class="back-face" src="images/question.png" alt="Question Mark" />
+      </div>
+      <div class="memory-card" data-img="sitting" data-gender="she">
+        <img class="front-face" src="images/sit.png" alt="Child Sitting" />
+        <img class="back-face" src="images/question.png" alt="Question Mark" />
+      </div>
+      <div class="memory-card" data-img="sleeping" data-gender="she">
+        <img class="front-face" src="images/sleep.png" alt="Child Sleeping" />
+        <img class="back-face" src="images/question.png" alt="Question Mark" />
+      </div>
+      <div class="memory-card" data-img="sleeping" data-gender="she">
+        <img class="front-face" src="images/sleep.png" alt="Child Sleeping" />
+        <img class="back-face" src="images/question.png" alt="Question Mark" />
+      </div>
+      <div class="memory-card" data-img="washing" data-gender="he">
+        <img class="front-face" src="images/wash.png" alt="Child Washing" />
+        <img class="back-face" src="images/question.png" alt="Question Mark" />
+      </div>
+      <div class="memory-card" data-img="washing" data-gender="he">
+        <img class="front-face" src="images/wash.png" alt="Child Washing" />
+        <img class="back-face" src="images/question.png" alt="Question Mark" />
+      </div>
+    </section>
+    
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
