@@ -1,0 +1,56 @@
+:root {
+  --border: #bbbbbb;
+  --font: "Work Sans", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 50vw;
+  height: 75vh;
+  border: 5px solid var(--border);
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #bbbbbb;
+}
+
+.square {
+  border: 3px solid var(--border);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 7em;
+}
+
+/* Utility Classes */
+
+.winner {
+  color: #32852c;
+  font-size: 10em;
+  /* transform: scale(1.5);
+  transition-duration: 1.5s; */
+}
+
+.hide {
+  display: none;
+}
+
+h1 {
+  color: #787878;
+  position: absolute;
+  left: 50%;
+  top: 2%;
+  transform: translate(-50%);
+  font-size: 5em;
+}
