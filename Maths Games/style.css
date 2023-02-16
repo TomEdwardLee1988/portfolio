@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  height: 100vh;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+aside {
+  padding: 10px 20px;
+  width: 25%;
+  border: 2px solid #111;
+  height: 100%;
+  background: #343434;
+  border-radius: 10px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 5px;
+  border: solid 1px #111;
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.main {
+  margin-left: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  /* this makes sure all boxes all aligned together */
+  align-items: flex-end;
+  flex-wrap: wrap;
+  max-height: 90%;
+}
+
+.question {
+  margin: 20px;
+  font-size: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+#answer {
+  margin: 20px 0 20px 20px;
+  font-size: 1.7rem;
+  width: 18%;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+#answer:focus {
+  outline: none;
+}
+
+.correct {
+  border: 2px solid #66b616;
+  background: #66b616;
+}
+
+.incorrect {
+  border: 2px solid #df1515;
+  background: #df1515;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+  appearance: textfield;
+}
