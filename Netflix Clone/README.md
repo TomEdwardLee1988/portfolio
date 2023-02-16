@@ -1,0 +1,1 @@
+This is a clone of the (now changed) NetFlix website - to continue to practice and improve my CSS. Whilst this followed an online tutorial - I attemped to complete prior to the instruction, and used the instruction if I struggled on an element.
