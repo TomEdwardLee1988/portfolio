@@ -11,7 +11,12 @@ const trumpQuote = async () => {
 
     const container = document.querySelector(".container");
     const newDataElement = document.createElement("div");
-    newDataElement.innerText = data.message;
+    //Pull out the message from the JSON
+
+    //using destructuring
+    let { message } = data;
+
+    newDataElement.innerText = message;
     container.appendChild(newDataElement);
   } catch (error) {
     console.log(error);
