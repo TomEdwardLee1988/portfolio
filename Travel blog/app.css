@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+.card {
+  display: flex;
+  margin: 2rem;
+  max-height: 30%;
+}
+
+.card--image {
+  width: 30%;
+  border-radius: 15px;
+  object-fit: cover;
+  max-height: 100%;
+}
+
+.container {
+  margin: 2rem;
+  width: 50%;
+}
+
+.card--country,
+.card--attraction,
+.card--date,
+.card--text {
+  padding: 2rem;
+}
+
+.card--text {
+  text-align: justify;
+}
